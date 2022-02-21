@@ -33,7 +33,10 @@ crontab -e
 */45 * * * * /usr/sbin/ntpdate a.ntp.br ou */45 * * * * root /usr/sbin/ntpdate a.ntp.br
 
 - INSTALANDO O BANCO DE DADOS POSTGRESQL 13.0 OU SUPERIOR
-apt install postgresql-13 postgresql-contrib  
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" |sudo tee  /etc/apt/sources.list.d/pgdg.list
+apt update
+apt install postgresql-13 postgresql-contrib 
 
 Acessando o postgrel:  
 sudo -u postgres psql  

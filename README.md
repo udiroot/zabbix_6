@@ -2,3 +2,4 @@
 
 - INSTALAÇÃO (ubuntu/oracle linux)
 - UPDATE
+- ADD IINSTALAÇÃO ZABBIX 6.0.4 COM TIMESCALEDB

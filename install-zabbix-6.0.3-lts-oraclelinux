@@ -110,7 +110,7 @@ User=zabbix
 
 - EDITAR O CONF DO NGINX
 sudo vim /etc/nginx/conf.d/zabbix.conf
-listen 8080;
+listen 80;
 # server_name server.com;
 
 sudo systemctl restart zabbix-server zabbix-agent nginx php-fpm 
@@ -134,3 +134,7 @@ host    all             all             0.0.0.0/0               md5
 host    all             all             ::0/0                   md5
 
 sudo systemctl restart postgresql-13.service
+
+DEPOIS ACESSE O ZABBIX PARA AS CONF INCIAL
+http://iporlocalhost:80/zabbix
+

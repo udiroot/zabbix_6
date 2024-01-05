@@ -43,11 +43,11 @@ sudo -u postgres psql
 Ver a versão do postgresql
 select version();
 
-Ver user/database criado no postgre: 
+Ver user/database criado no postgres: 
 SELECT usename FROM pg_user; 
 SELECT datname FROM pg_database;  
 
-Deletando user/database no postgres: 
+Deletando user/database no postgres: (Caso seja necessário)
 DROP USER username; 
 DROP DATABASE dbname;  
 
@@ -55,7 +55,9 @@ Saindo do postgres:
 \q 
 
 Criando um usuairo e DB para o zabbix NO SHELL: 
-sudo -u postgres createuser --pwprompt zabbix (depois escolha a senha) 
+sudo -u postgres createuser --pwprompt zabbix
+(depois escolha a senha)
+
 sudo -u postgres createdb -O zabbix -E Unicode -T template0 zabbix_db 
 
 - INSTALL ZABBIX SERVER 6 LTS NO ORACLE LINUX 9

@@ -16,7 +16,7 @@ E mude SELINUX=enforcing para SELINUX=disabled
 Salve :wq!
 
 Rode o comando
-init 6 (ao executar esse comando o s.o será reiniciado)
+sudo init 6 (ao executar esse comando o s.o será reiniciado)
 
 COMANDO PARA ALTERAR
 nmcli con edit enp0s3 ou eth0
